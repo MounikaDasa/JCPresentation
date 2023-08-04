@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lisu+Bosa:wght@600&family=Montserrat:wght@200&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- Slick carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  
+    <style>
+        .class1 {
+            margin: 50px;
+            color: rgb(39, 39, 41);
+        }
+        .class2 {
+            margin: 50px;
+            color: rgb(39, 39, 41);
+        }
+        .title{
+          font-size: xxx-large;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        ul li{
+          font-size:x-large;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+          font-size:xx-large;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<!-- Container for both sliders -->
+<div class="slider-container">
+    <!-- Slider 1 - class1 content -->
+    <div class="slider">
+        <div class="class1">
+            <h1 class="title">Discussions</h1>
+       
+            <h2>Why this paper ?</h2>
+            
+            <video controls width="640" height="360">
+                <source src="./Object.mp4" type="video/mp4">
+            </video>
+            
+            <ul>
+                <li>Was looking at how to analyse the predictive position shift</li>
+                <li>
+                 The paper provides a relationship between succade latency and predictive position shift
+                </li>
+                 Not sure if this relation is valid, but sounds intresting
+                <li>
+                This study can have applications in the field of AR and Virtual assitants
+                </li>
+                <li>
+                Motion extrapolation can be used to make AR experiences more 
+                immersive by making it appear as if digital objects are moving smoothly and predictably</li>
+                <li>
+                    Motion extrapolation can be used to improve the accuracy of virtual assistants by predicting the 
+                    future positions of the user's eyes.
+                     This can help to make virtual assistants more responsive and user-friendly.
+                </li>
+            </ul>
+            <!-- More class2 content here if needed -->
+        </div>
+    </div>
+</div>
+
+<!-- Slick carousel JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Initialize sliders
+        $('.slider-container').slick({
+            arrows: false, // Hide navigation arrows
+            dots: true, // Show dots navigation
+            
+            fade: true // Use fade effect for smooth transition
+        });
+    });
+</script>
+</body>
+</html>
